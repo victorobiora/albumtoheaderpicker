@@ -1,0 +1,61 @@
+
+.button , .navButton {
+    background-color: rgb(89, 211, 89);
+    color: white;
+    border-radius: 0.6rem;
+    padding: 0.6rem !important;
+    border-color: transparent;
+}
+
+.navButton {
+        position: relative;
+        bottom: 0.5rem;
+}
+
+.nav {
+    height: 4rem;
+    background-color: rgb(41, 44, 41);
+    color: rgb(238, 218, 218);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3rem;
+    padding-top: 0.4rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+} 
+
+.nav-home {
+    font-size: large;
+    margin-top: 0.7rem;
+}
+
+.nav-home__links {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    position: relative;
+    top: 1rem;
+   
+}
+
+.nav-home__links * {
+    padding: 0 0.5rem;
+}
+
+.imageContainer h1 {
+       position: absolute;
+       bottom: 11rem;
+       left: 1rem;
+       color:  rgb(238, 218, 218);
+}
+.header-image {
+    height: 33rem;
+    width: 100%;    
+}
+
+.header-image img {
+    height: 100%;
+    width: 100%;
+}
