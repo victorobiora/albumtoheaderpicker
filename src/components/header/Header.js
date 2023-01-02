@@ -5,12 +5,12 @@ import albumsContext from "../../contexts/albums-context";
 
 const Header = props => {
 
-    const ctx = useContext(albumsContext);
-    console.log(ctx.albums[0])
+const ctx = useContext(albumsContext);
+    console.log(ctx.selectedAlbum)
 
     return <Fragment>
         <Nav/>
-        <ImageContainer />
+        <ImageContainer image = {ctx.selectedAlbum} />
     </Fragment>
 };
 

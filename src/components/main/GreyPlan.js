@@ -1,11 +1,14 @@
-import { Fragment } from 'react';
+import { Fragment, useContext } from 'react';
 import classes from './mainstyles.module.css';
 import Button from '../../store/Button';
+import albumsContext from '../../contexts/albums-context';
 
 const GreyPlan = props => {
+  const ctx = useContext(albumsContext)
 
   const changeHeaderHandler = el => {
     el.preventDefault()
+    ctx.newHeaderImageHandler(props.image)
   }
   
   return  <Fragment>
