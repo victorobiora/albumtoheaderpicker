@@ -6,11 +6,11 @@ import albumsContext from "../../contexts/albums-context";
 const Header = props => {
 
     const ctx = useContext(albumsContext);
-    console.log(ctx)
+    console.log(ctx.albums[0])
 
     return <Fragment>
         <Nav/>
-        <ImageContainer/>
+        <ImageContainer />
     </Fragment>
 };
 
